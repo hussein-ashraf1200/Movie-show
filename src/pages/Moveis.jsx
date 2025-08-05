@@ -23,6 +23,7 @@ const Moveis = () => {
                      hover:scale-105 transition-transform duration-300 flex flex-col"
           >
             <img
+              loading="lazy"
               src={item.poster_path}
               alt={item.title}
               className="w-full h-52 object-cover p-2 rounded-2xl"

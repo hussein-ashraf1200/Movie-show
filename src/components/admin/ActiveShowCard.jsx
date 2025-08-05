@@ -10,7 +10,11 @@ const ActiveShowCard = () => {
       <div className="">
         {dummyDashboardData.activeShows.map((show) => (
           <div>
-            <img src={show.movie.backdrop_path} alt={show.movie.title} />
+            <img
+              loading="lazy"
+              src={show.movie.backdrop_path}
+              alt={show.movie.title}
+            />
             <p>{show.movie.title}</p>
             <p>{show.movie.vote_average.toFixed(1)}</p>
             <p>{show.showPrice}</p>

@@ -50,6 +50,7 @@ const Selections = () => {
     <div className="text-white p-6 mt-20 flex flex-col justify-center items-center ">
       <div className="flex flex-col sm:flex-row gap-8 justify-center items-start ">
         <img
+          loading="lazy"
           src={selectedMovie?.backdrop_path}
           alt="Movie Poster"
           className="max-md:mx-auto rounded-xl h-104 max-w-70 object-cover"
@@ -107,6 +108,7 @@ const Selections = () => {
               hover:scale-105 transition-transform"
             >
               <img
+                loading="lazy"
                 src={actor.profile_path}
                 alt={actor.name}
                 className="w-12 h-12 object-cover rounded-full border-2 border-primary"

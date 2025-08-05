@@ -14,6 +14,7 @@ const Card = () => {
         >
           {/* Poster Image */}
           <img
+            loading="lazy"
             src={item.poster_path}
             alt={item.title}
             className="w-full h-52 object-cover p-2 rounded-2xl"

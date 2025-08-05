@@ -17,6 +17,7 @@ const Trailers = () => {
       {/* شاشة العرض الرئيسية */}
       <div className="w-full  aspect-video mb-8 rounded-4xl overflow-hidden">
         <iframe
+          loading="lazy"
           src={selectedVideo}
           title="Main Trailer"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -35,6 +36,7 @@ const Trailers = () => {
               className="cursor-pointer hover:scale-110 transition-transform duration-300"
             >
               <img
+                loading="lazy"
                 src={item.image}
                 alt={`Trailer ${index + 1}`}
                 className="rounded-xl w-full h-48 object-cover"

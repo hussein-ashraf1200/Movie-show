@@ -11,7 +11,7 @@ const HeroSections = () => {
       min-h-screen w-full flex items-center lg:p-40 p-2"
     >
       <div className="space-y-6">
-        <img src={assets.marvelLogo} alt="marvelLogo" />
+        <img loading="lazy" src={assets.marvelLogo} alt="marvelLogo" />
         <h1 className="sm:text-6xl text-4xl font-semibold">
           Guardians <br />
           of the Galaxy
