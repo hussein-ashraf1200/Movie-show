@@ -90,7 +90,7 @@ const Seats = () => {
     ));
 
   return !isloading ? (
-    <div className="space-y-10 text-[14px] mb-40  ">
+    <div className="space-y-10 text-[14px] mb-40  items-center  ">
       <div className="sm:w-full w-[200px]  flex items-center justify-center ">
         <svg loading="lazy" width="600" height="120" viewBox="0 0 400 120">
           <path
@@ -114,7 +114,7 @@ const Seats = () => {
       {/* القسم الأول */}
       <div className="flex justify-center items-center">
         <div className="p-4 rounded w-fit">
-          <div className="grid sm:grid-cols-9  grid-cols-3 gap-2">
+          <div className="grid sm:grid-cols-9 text-[.5rem]  sm:text-[1rem]  grid-cols-9  gap-2">
             {renderSeats(chairsAB)}
           </div>
         </div>
@@ -123,13 +123,13 @@ const Seats = () => {
       <div className=" relative  ">
         <div className="flex justify-center items-center sm:flex-row  flex-col">
           <div className="p-4 rounded w-full">
-            <div className="grid sm:grid-cols-9  grid-cols-3 gap-2">
+            <div className="grid text-[.5rem]  sm:text-[1rem] grid-cols-9  gap-2">
               {renderSeats(chairsCD)}
             </div>
           </div>
 
           <div className="p-4 rounded w-full">
-            <div className="grid sm:grid-cols-9  grid-cols-3 gap-2">
+            <div className="grid sm:grid-cols-9  sm:text-[1rem]  text-[.5rem] grid-cols-9  gap-2">
               {renderSeats(chairsEF)}
             </div>
           </div>
@@ -137,13 +137,13 @@ const Seats = () => {
 
         <div className="flex justify-center items-center sm:flex-row  flex-col">
           <div className="p-4 rounded w-full">
-            <div className="grid sm:grid-cols-9  grid-cols-3 gap-2">
+            <div className="grid sm:grid-cols-9 sm:text-[1rem]  text-[.5rem] grid-cols-9  gap-2">
               {renderSeats(chairsGH)}
             </div>
           </div>
 
           <div className="p-4 rounded w-full">
-            <div className="grid sm:grid-cols-9  grid-cols-3 gap-2">
+            <div className="grid sm:grid-cols-9  sm:text-[1rem] text-[.5rem] grid-cols-9 gap-2">
               {renderSeats(chairsIJ)}
             </div>
           </div>
